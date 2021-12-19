@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:weightSum="10"
+    android:orientation="horizontal"
+
+    android:background="@color/toolbar_color"
+    >
+<!--    android:layout_centerVertical="true"-->
+<!--    android:layout_marginLeft="10dp"-->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_weight="1"
+        android:src="@drawable/arrow"
+        android:layout_gravity="center_vertical"
+       android:layout_marginLeft="5dp"
+        android:layout_marginTop="1dp"
+        android:id="@+id/back"
+        android:background="@drawable/ripple_effect_for_search_and_back"
+        />
+<!--    android:layout_width="315dp"-->
+<!--    android:layout_height="50dp"-->
+<!--    android:layout_marginTop="5dp"-->
+<!--    android:layout_toEndOf="@+id/back"-->
+<!--    android:layout_toLeftOf="@+id/search"-->
+    <EditText
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:layout_weight="7.9"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textColorHint="#8AFFFFFF"
+        android:hint="search"
+        android:id="@+id/search_bar"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        tools:ignore="RtlCompat" />
+
+<!--    android:layout_alignParentRight="true"-->
+<!--    android:layout_centerVertical="true"-->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_weight="1"
+        android:src="@drawable/searchimg"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/search"
+        android:background="@drawable/ripple_effect_for_search_and_back"
+         />
+</LinearLayout>
